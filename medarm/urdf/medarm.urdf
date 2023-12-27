@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="medarm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.03821163683475E-17 0.171534730752603 -0.783414384790882"
+        rpy="0 0 0" />
+      <mass
+        value="9.01755124549785" />
+      <inertia
+        ixx="2.07247140960394"
+        ixy="7.67267798344596E-20"
+        ixz="-5.17938831157247E-18"
+        iyy="2.06826789127639"
+        iyz="0.0245771881935619"
+        izz="0.0110183736339026" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link 1">
+    <inertial>
+      <origin
+        xyz="0.273302562267948 2.69702887667911E-17 -0.00546605124535897"
+        rpy="0 0 0" />
+      <mass
+        value="0.728014376029328" />
+      <inertia
+        ixx="0.00015821007532516"
+        ixy="-2.1977996503762E-18"
+        ixz="7.69166285363975E-05"
+        iyy="0.0172794149216318"
+        iyz="9.83878438367148E-21"
+        izz="0.0174190218388158" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link 1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link 2">
+    <inertial>
+      <origin
+        xyz="0.235898699097035 -0.000198886242888441 -0.005"
+        rpy="0 0 0" />
+      <mass
+        value="0.660155974711788" />
+      <inertia
+        ixx="0.000147623955912093"
+        ixy="1.06657630064405E-18"
+        ixz="3.85195147888361E-21"
+        iyy="0.0134229973753988"
+        iyz="1.03371900882913E-21"
+        izz="0.0135596187317324" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="continuous">
+    <origin
+      xyz="0.499801113757111 0.0141013009029647 -0.01"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="Link 1" />
+    <child
+      link="Link 2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link 3">
+    <inertial>
+      <origin
+        xyz="-4.11649377363155E-08 -0.00518583052058241 -0.0205754898182167"
+        rpy="0 0 0" />
+      <mass
+        value="0.244748418685594" />
+      <inertia
+        ixx="0.000120544353513894"
+        ixy="6.40222901061501E-10"
+        ixz="5.47959087725313E-11"
+        iyy="0.0001371924122593"
+        iyz="-1.82059362418803E-05"
+        izz="7.19104761785958E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="continuous">
+    <origin
+      xyz="0.485898699097035 -0.000198886242888774 -0.01"
+      rpy="0 0 0" />
+    <parent
+      link="Link 2" />
+    <child
+      link="Link 3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="Link 4">
+    <inertial>
+      <origin
+        xyz="0.226697437732052 0 0.0295339487546409"
+        rpy="0 0 0" />
+      <mass
+        value="0.728014376029328" />
+      <inertia
+        ixx="0.00015821007532516"
+        ixy="-1.19030475453032E-18"
+        ixz="-7.69166285363986E-05"
+        iyy="0.0172794149216318"
+        iyz="-4.39458074618261E-20"
+        izz="0.0174190218388158" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0400000000000003"
+      rpy="1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="Link 3" />
+    <child
+      link="Link 4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link 5">
+    <inertial>
+      <origin
+        xyz="0.00707413261964218 -2.3856740916095E-08 0.0353004632382103"
+        rpy="0 0 0" />
+      <mass
+        value="0.370475459077024" />
+      <inertia
+        ixx="0.000362863984321493"
+        ixy="-6.76403536039678E-10"
+        ixz="4.48969373637121E-05"
+        iyy="0.000337999935988037"
+        iyz="1.31503058470621E-10"
+        izz="0.000111773204131464" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="continuous">
+    <origin
+      xyz="0.5 0 -0.045"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="Link 4" />
+    <child
+      link="Link 5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link 6">
+    <inertial>
+      <origin
+        xyz="-0.227141365320987 -5.55111512312578E-17 -0.00870017025386105"
+        rpy="0 0 0" />
+      <mass
+        value="0.684049775699944" />
+      <inertia
+        ixx="0.000110743192142827"
+        ixy="-1.76573529561225E-19"
+        ixz="5.72376533639247E-05"
+        iyy="0.0144919464140292"
+        iyz="1.40537879033182E-20"
+        izz="0.0145725032241814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="continuous">
+    <origin
+      xyz="0.04 0 0"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="Link 5" />
+    <child
+      link="Link 6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link 7">
+    <inertial>
+      <origin
+        xyz="0 0 -0.394418166148166"
+        rpy="0 0 0" />
+      <mass
+        value="0.329257258956242" />
+      <inertia
+        ixx="0.0103673470107912"
+        ixy="-1.1025578829938E-21"
+        ixz="3.70655083325837E-19"
+        iyy="0.0103592470107912"
+        iyz="3.6256021647872E-20"
+        izz="1.35163737109299E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://medarm/meshes/Link 7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J7"
+    type="prismatic">
+    <origin
+      xyz="0.1 0 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="Link 6" />
+    <child
+      link="Link 7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
